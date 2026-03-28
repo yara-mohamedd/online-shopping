@@ -9,7 +9,7 @@ function login(e) {
     localStorage.setItem("isLoggedIn", "true");
     localStorage.setItem("userEmail", email);
 
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   } else {
     alert("Access denied ❌");
   }
@@ -17,5 +17,5 @@ function login(e) {
 
 // لو already logged in
 if (localStorage.getItem("isLoggedIn") === "true") {
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }
